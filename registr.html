@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+            body {
+                background: url(image/lexus.jpg);
+                background-size: 1700px;
+            }
+            .container{
+                width:450px;
+                height: 250px;
+                background-color: rgba(128,128,128, 0.7);
+                margin: 250px auto 0 auto;
+                text-align: center;
+            }  
+            p {
+                color:yellow;
+                font-size: 40px;
+                font-family: Arial;
+            }
+        </style>
+</head>
+<body>
+    <a href="index.html">
+        <img src="image/Home.png" alt="home" width="30">
+    </a>
+    <div class="container">
+        <p>Регистрация</p>
+        <form action="https://fom.in.ua/echo">
+            <input type="email" name="email" required placeholder="Email">
+            <br>
+            <input type="password" name="password" required placeholder="Пароль">
+            <br> 
+            <input type="password" name="password1" required placeholder="Повторите пароль">
+            <br> 
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</body>
+</html>

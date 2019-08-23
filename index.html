@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        body {
+            background: url(image/lexus.jpg);
+            background-size: 1700px;
+        }
+        .fon {
+            padding: 20px;
+            background-color: rgba(128,128,128, 0.7);
+        }
+
+        a {
+            text-decoration: none;
+            color:black;
+            padding: 0px 40px;
+            font-family: arial;
+            font-size: 25px;
+        }
+        ul {
+            margin-top: 30px;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            background: #B0E0E6;
+            height: 40px;
+
+        }
+        li{
+            float:right;
+            margin-right: 5px;
+        }
+        p {
+            color:yellow;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="avtoriz.html">Войти</a></li>
+        <li><a href="registr.html">Регистрация</a></li>
+    </ul>
+    <div class="fon">
+        <form action="https://fom.in.ua/echo" >
+        <table>
+            <tr>
+                <td><p>Страна производитель</p>
+                    <input type="radio" id="u" name="country" value="Ukraine">
+                    <label for="u"><img src="image/ukraine.svg" width="50" alt="Ukraine"></label>
+                    <input type="radio" id="g" name="country" value="Germany">
+                    <label for="g"><img src="image/Germany.svg" width="50" alt="Germany"></label>
+                    <input type="radio" id="p" name="country" value="Poland">
+                    <label for="p"><img src="image/poland.jpg" width="50" alt="poland"></label>
+                </td>
+                <td><p>Марка авто</p>
+                    <select name="mark">
+                        <option value="1" selected>Любая</option>
+                        <option value="2">Audi</option>
+                        <option value="3">BMW</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Mercedes-Benz</option>
+                        <option value="6">Opel</option>
+                        <option value="7">Renault</option>
+                        <option value="8">Skoda</option>
+                        <option value="9">Toyota</option>
+                        <option value="10">Volkswagen</option>
+                        <option value="11">ВАЗ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Цена, $</p>
+                    <input type="number" placeholder="от" name="price_min" min="0">
+                    <input type="number" placeholder="до" name="price_max" max="100000000000"> 
+                </td>
+                <td>
+                    <p>Год выпуска</p> 
+                    <input type="number" placeholder="от" name="year_min" min="1940">
+                    <input type="number" placeholder="до" name="year_max" max="2019"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Состояние</p>
+                    <input type="checkbox" name="car_condition" value="new" id="1"><label for="1">Гаражное хранение</label><br>
+                    <input type="checkbox" name="car_condition" value="used" id="2"><label for="2">Не крашенная</label><br>
+                    <input type="checkbox" name="car_condition" value="without_damage" id="3"><label for="3">Без повреждений</label><br>
+                    <input type="checkbox" name="car_condition" value="credit" id="4"><label for="4">В кредите</label><br>
+                    <input type="checkbox" name="car_condition" value="first_reg" id="5"><label for="5">Первая регистрация</label><br>
+                    <input type="checkbox" name="car_condition" value="dtp" id="6"><label for="6">После дтп</label><br>
+                    <input type="checkbox" name="car_condition" value="not_move" id="7"><label for="7">Не на ходу</label><br>
+                    <input type="checkbox" name="car_condition" value="first" id="8"><label for="8">Первый владелец</label><br>
+                    <input type="checkbox" name="car_condition" value="repair" id="9"><label for="9">Требует ремонта</label>
+                </td>
+                <td>
+                    <p>Топливо</p>
+                    <input type="checkbox" name="fuel" value="fuel" id="10"><label for="10">Бензин</label><br>
+                    <input type="checkbox" name="fuel" value="gas" id="11"><label for="11">Газ</label><br>
+                    <input type="checkbox" name="fuel" value="gibrid" id="12"><label for="12">Гибрид</label><br>
+                    <input type="checkbox" name="fuel" value="disel" id="13"><label for="13">Дизель</label><br>
+                    <input type="checkbox" name="fuel" value="electro" id="14"><label for="14">Электро</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Тип кузова</p>
+                    <input type="checkbox" name="kuzov" value="1" id="15"><label for="15">Внедорожник</label><br>
+                    <input type="checkbox" name="kuzov" value="2" id="16"><label for="16">Седан</label><br>
+                    <input type="checkbox" name="kuzov" value="3" id="17"><label for="17">Минивен</label><br>
+                    <input type="checkbox" name="kuzov" value="4" id="18"><label for="18">Хетчбек</label><br>
+                    <input type="checkbox" name="kuzov" value="5" id="19"><label for="19">Универсал</label><br>
+                    <input type="checkbox" name="kuzov" value="6" id="20"><label for="20">Купе</label><br>
+                    <input type="checkbox" name="kuzov" value="7" id="21"><label for="21">Пикап</label><br>
+                    <input type="checkbox" name="kuzov" value="8" id="22"><label for="22">Кабриолет</label><br>
+                </td>
+                <td>
+                    <p>Комфорт</p>
+                    <input type="checkbox" name="comfort" value="1" id="23"><label for="23">Електропакет</label><br>
+                    <input type="checkbox" name="comfort" value="2" id="24"><label for="24">Бортовой компьютер </label><br>
+                    <input type="checkbox" name="comfort" value="3" id="25"><label for="25">Кожанный салон </label><br>
+                    <input type="checkbox" name="comfort" value="4" id="26"><label for="26">Люк </label><br>
+                    <input type="checkbox" name="comfort" value="5" id="27"><label for="27">Круиз контроль </label><br>
+                    <input type="checkbox" name="comfort" value="6" id="28"><label for="28">Мультируль </label><br>
+                    <input type="checkbox" name="comfort" value="7" id="29"><label for="29">Кондиционер </label><br>
+                    <input type="checkbox" name="comfort" value="8" id="30"><label for="30">Охранная система </label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Тип коробки передач</p>
+                    <select name="korobka_p">
+                        <option value="ruchnaya">Ручная</option>
+                        <option value="avtomat">Автомат</option>
+                        <option value="tiptronik">Типтроник</option>
+                        <option value="gidromehan">Гидромеханическая</option>
+                        <option value="robotiz">Роботизированная</option>
+                    </select>
+                </td>
+                <td>
+                    <p>Цвет</p>
+                    <select name="color" >
+                        <option value="white">Белый</option>
+                        <option value="black">Черный</option>
+                        <option value="grey">Серый</option>
+                        <option value="blue">Синий</option>
+                        <option value="red">Красный</option>
+                        <option value="beige">Бежевый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="cherry">Вишневый</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Поиск">
+                </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
